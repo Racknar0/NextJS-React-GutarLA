@@ -9,9 +9,9 @@ const Layout = ({children, pagina}) => {
             <meta name="description" content="Sitio web venta de Guitaras" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        
-        <Header />
 
+        <Header />
+    	
 
 
       

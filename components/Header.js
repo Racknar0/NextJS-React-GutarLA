@@ -1,16 +1,23 @@
 import Link from "next/link"
+import Image from 'next/image'
+
+import styles from '../styles/Header.module.css'
+
 
 
 const Header = () => {
   return (
-    <header>
-      <div className="conttenedor">
+    <header className={styles.header}>
+      <div className="contenedor">
         <div>
-
+            <Link href="/">
+                <Image width={400} height={100} src="/img/logo.svg" alt="imagen_logo" />
+            </Link>
+            
         </div>
-        <nav>
+        <nav className={styles.navegacion}>
             <Link href="/">Inicio</Link>
-            <Link href="/">Nosotros</Link>
+            <Link href="/nosotros">Nosotros</Link>
             <Link href="/">Blog</Link>
             <Link href="/">Tienda</Link>
         </nav>
